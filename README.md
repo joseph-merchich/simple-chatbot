@@ -69,4 +69,4 @@ LINE 70: Left blank for readability.
 
 LINE 71-74: Writes and saves interaction to file. The program can reference this in future conversations.
 
-I hope this explained my code! If you have any questions, put them in the comments and I'll try to answer you.
+I hope this explained my code! 
