@@ -5,14 +5,13 @@ import time
 model = "llama2:7b-chat"
 outfile = sys.argv[2] if (len(sys.argv) == 3) else ""
 url = "http://localhost:11434/api/chat"
-sound = input("Would you like Smart Reading on? y/n")
+sound = input("Would you like reading mode on? y/n")
 if sound.lower() == "y":
     
     try:
         import pyttsx3
     except ImportError:
         print('The pyttsx3 module needs to be installed to run this')
-        print('On windows, open a commmand prompt and run: py -m pip install pyttsx3')
         sys.exit()
 
     tts = pyttsx3.init()
