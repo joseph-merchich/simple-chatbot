@@ -1,3 +1,11 @@
+How to install the Ollamma model:
+
+Navigate to your system's terminal.
+
+Command: `ollama pull lamma2`.
+
+
+
 Code line-by-line:
 
 LINE 1: Imports requests for URL.
