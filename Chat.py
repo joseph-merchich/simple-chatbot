@@ -2,6 +2,7 @@ import requests
 import json
 import sys
 import time
+print("Launching...")
 model = "llama2:7b-chat"
 outfile = sys.argv[2] if (len(sys.argv) == 3) else ""
 url = "http://localhost:11434/api/chat"
@@ -27,7 +28,8 @@ def slowSpacePrint(text, interval=0.01):
 def speak(text):
     tts.say(text)
     tts.runAndWait()
-    
+print("Done!")
+
 prompt = input("]")
 text = "]" + prompt + "\n"
 print()
@@ -51,6 +53,8 @@ while (prompt != ""):
     reply = json.loads(resp.text)
     ans = reply['message']['content']
     text += ans + "\n\n"
+    print("Done!")
+    print()
     slowSpacePrint(ans)
     if voice_on == True:
         speak(ans)
