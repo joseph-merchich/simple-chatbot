@@ -17,6 +17,8 @@ if sound.lower() == "y":
 
     tts = pyttsx3.init()
     voice_on = True
+else:
+    voice_on = False
     
 def slowSpacePrint(text, interval=0.01):
     for character in text:
