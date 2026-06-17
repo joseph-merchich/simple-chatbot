@@ -1,8 +1,8 @@
+print("Launching...")
 import requests
 import json
 import sys
 import time
-print("Launching...")
 model = "llama2:7b-chat"
 outfile = sys.argv[2] if (len(sys.argv) == 3) else ""
 url = "http://localhost:11434/api/chat"
